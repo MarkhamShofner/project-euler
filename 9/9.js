@@ -8,7 +8,9 @@ console.log("hello");
 // There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 // Find the product abc.
 
-// triplet?
+var a, b, c;
+
+// triplet - is a < b < c
 // pythagorean triplet?
 // sums to 1000?
 // product
