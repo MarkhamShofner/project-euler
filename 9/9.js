@@ -16,10 +16,29 @@ function isTriplet (a, b, c) {
     return false;
   }
 }
-// pythagorean triplet?
 
-// sums to 1000?
+// pythagorean triplet?
+function isPythag (a, b, c) {
+  if (a*a + b*b === c*c) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// sums to 1000
+function sum1000 (a, b, c) {
+  if (a + b + c === 1000) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // product
+function product (a, b, c) {
+  return a * b * c;
+}
 
 //actual call function
 function mainCall (ax, bx, cx) {
