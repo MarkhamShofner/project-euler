@@ -44,4 +44,5 @@ function product (a, b, c) {
 function mainCall (ax, bx, cx) {
   isTriplet (ax, bx, cx);
 
+  
 }
