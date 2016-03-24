@@ -50,7 +50,7 @@ function mainCall () {
       // console.log("${k} k");
     }
   }
-
+// find a way to make the o notation better
 
 
 }
