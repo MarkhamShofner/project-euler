@@ -41,8 +41,16 @@ function product (a, b, c) {
 }
 
 //actual call function
-function mainCall (ax, bx, cx) {
-  isTriplet (ax, bx, cx);
+function mainCall () {
+  for (var i = 0; i < 1000; i++) {
+    console.log(i + " i");
+    for (var j = i; j < 1000; j ++) {
+      var k = 1000 - i - j;
+      // console.log(j + " j");
+      // console.log("${k} k");
+    }
+  }
 
-  
+
+
 }
