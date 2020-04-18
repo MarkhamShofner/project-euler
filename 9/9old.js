@@ -5,9 +5,7 @@
 // There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 // Find the product abc.
 
-const targetNumber = 1000;
-
-// is a < b < c
+// triplet - is a < b < c
 function isTriplet (a, b, c) {
   if (a < b && b < c) {
     return true;
@@ -16,7 +14,7 @@ function isTriplet (a, b, c) {
   }
 }
 
-// does a^2 + b^2 = c^2
+// pythagorean triplet?
 function isPythag (a, b, c) {
   if (a*a + b*b === c*c) {
     return true;
@@ -36,29 +34,21 @@ function sum1000 (a, b, c) {
 
 // product
 function product (a, b, c) {
-  debugger;
   return a * b * c;
 }
 
 //actual call function
 function mainCall () {
-  for (var i = 0; i < targetNumber; i++) {
-    for (var j = i; j < targetNumber; j++) {
-      for (var k = j; k < targetNumber; k++) {
-        if (isTriplet(i, j, k)) { // this should always be true given these for loops
-          if (isPythag(i, j, k)) {
-            if (sum1000(i, j, k)) {
-              console.log(`a is ${i}, b is ${j}, c is ${k}`);
-              console.log(`and the product of the triplet is ${product(i,j,k)}`);
-            }
-          }
-        }
-      }
+  for (var i = 0; i < 1000; i++) {
+    console.log(i + " i");
+    for (var j = i; j < 1000; j ++) {
+      console.log(j + " j");
+      // console.log("${k} k");
     }
   }
+// find a way to make the o notation better
+
+
+
+
 }
-
-this.mainCall();
-
-// todo: make the o notation better
-//// options - early exits in the loops
