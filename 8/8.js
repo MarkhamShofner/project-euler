@@ -49,7 +49,6 @@ for (var i = 0; i < testString.length-lengthR; i++) {
   console.log(biggestProduct);
 }
 
-
 // means to calculate the product of the string
 // means to store that product
 // means to store the string
