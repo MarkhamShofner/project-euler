@@ -12,25 +12,27 @@ const findPrimesSumUpTo = (n) => {
     return 0;
   } else {
     const primesArray = identifyPrimesUpTo(n);
+    // sum the array of primes
     const primesSum = primesArray.reduce((a,b) => a+b, 0);
     return primesSum;
   }
 };
 
-
 // another good way to do this could be starting with an array of 2,000,000
 // then removing everything from i --> 2,000,000 / 2 and all their multiples
-
 const identifyPrimesUpTo = (n) => {
-  const arrayToCeiling = [0,0];
+  const arrayToCeiling = [];
+  // create the array through size n
   for (let i = 2; i <= n; i++) {
     arrayToCeiling[i] = i;
   }
+  // set the value at the index to 0 if the index is a multiple of another number
   for (let j = 2; j <= n/2; j++) {
     for (let k = j*2; k <= n; k+=j) {
       arrayToCeiling[k] = 0;
     }
   }
+  // filter the array down to only non 0 numbers
   const primesArray = arrayToCeiling.filter(num => {
     return num > 0;
   });

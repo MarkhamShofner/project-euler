@@ -13,7 +13,6 @@ const solution = (maze, startRow, startCol, destRow, destCol) => {
 };
 
 const canTravelToSpace = (maze, row, column) => {
-  debugger;
     let canTravelToSpace = false;
 
     if (row < 0 || column < 0 || maze.length < row+1 || maze[0] < column+1) { // avoid out of bounds calls
@@ -31,7 +30,6 @@ const mazeWithVisitedSpace = (maze, row, column) => {
 
 const recursiveTraversalOfSpaces = (maze, startRow, startCol, row, col) => {
     // base case -- if current node = start node, return true
-    debugger;
     if ((startRow === row) && (startCol === col)) {
         return true;
     } else {
